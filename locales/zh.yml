@@ -1,0 +1,8 @@
+home:
+  useHead: IT Tools - 为开发人员提供方便的在线工具
+  tools_tips: 所有工具
+  categories:
+    newestTools: Newest tools
+layout:
+  base_title: IT Tools
+  base_tips: 为开发人员提供方便的在线工具

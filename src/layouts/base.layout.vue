@@ -15,6 +15,7 @@ import { useToolStore } from '@/tools/tools.store';
 import { useTracker } from '@/modules/tracker/tracker.services';
 import CollapsibleToolMenu from '@/components/CollapsibleToolMenu.vue';
 
+const { t } = useI18n();
 const themeVars = useThemeVars();
 const styleStore = useStyleStore();
 const version = config.app.version;
@@ -37,11 +38,11 @@ const tools = computed<ToolCategory[]>(() => [
         <HeroGradient class="gradient" />
         <div class="text-wrapper">
           <div class="title">
-            IT - TOOLS
+            {{ t('layout.base_title')  }}
           </div>
           <div class="divider" />
           <div class="subtitle">
-            Handy tools for developers
+            {{ t('layout.base_tips') }}
           </div>
         </div>
       </RouterLink>

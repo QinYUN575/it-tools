@@ -8,8 +8,8 @@ import { config } from '@/config';
 
 const toolStore = useToolStore();
 
-useHead({ title: 'IT Tools - Handy online tools for developers' });
 const { t } = useI18n();
+useHead({ title: t('home.useHead')} );
 </script>
 
 <template>
@@ -57,7 +57,7 @@ const { t } = useI18n();
         </n-grid>
       </div>
 
-      <n-h3>All the tools</n-h3>
+      <n-h3>{{ t('home.tools_tips') }}</n-h3>
       <n-grid x-gap="12" y-gap="12" cols="1 400:2 800:3 1200:4 2000:8">
         <n-gi v-for="tool in toolStore.tools" :key="tool.name">
           <transition>

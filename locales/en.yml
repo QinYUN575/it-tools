@@ -1,4 +1,6 @@
 home:
+  useHead: IT Tools - Handy online tools for developers
+  tools_tips: All the tools
   categories:
     newestTools: Newest tools
 
